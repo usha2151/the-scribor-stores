@@ -1,0 +1,19 @@
+# Open Graph images directory
+# Add your social media preview images here
+
+# Required files:
+# - og-image.jpg (1200x630px) - Main Open Graph image
+# - twitter-image.jpg (1200x630px) - Twitter card image
+
+# These images appear when your website is shared on:
+# - Facebook
+# - Twitter
+# - LinkedIn
+# - WhatsApp
+# - Other social platforms
+
+# Design tips:
+# - Keep important content in the center (safe zone)
+# - Use high contrast text
+# - Include your logo
+# - Avoid small text (it may not be readable)

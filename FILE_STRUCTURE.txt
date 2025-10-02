@@ -1,0 +1,273 @@
+================================================================================
+  THE SCRIBOR — File Structure
+================================================================================
+
+the-scribor/
+│
+├── 📄 Configuration Files
+│   ├── package.json                    # Dependencies and scripts
+│   ├── package-lock.json               # Dependency lock file (auto-generated)
+│   ├── next.config.js                  # Next.js configuration
+│   ├── tailwind.config.js              # Tailwind CSS configuration
+│   ├── postcss.config.js               # PostCSS configuration
+│   ├── .eslintrc.json                  # ESLint configuration
+│   ├── .gitignore                      # Git ignore rules
+│   ├── .env.example                    # Environment variables template
+│   └── .env.local                      # Your environment variables (CREATE THIS)
+│
+├── 📚 Documentation
+│   ├── README.md                       # Main documentation
+│   ├── SETUP.md                        # Setup guide
+│   ├── DEPLOYMENT.md                   # Deployment guide
+│   ├── CUSTOMIZATION.md                # Customization guide
+│   ├── PROJECT_SUMMARY.md              # Project overview
+│   ├── CHECKLIST.md                    # Launch checklist
+│   ├── QUICKSTART.txt                  # Quick start guide
+│   └── FILE_STRUCTURE.txt              # This file
+│
+├── 📁 src/
+│   │
+│   ├── 📁 app/                         # Next.js App Router
+│   │   │
+│   │   ├── 📄 layout.js                # Root layout (metadata, fonts)
+│   │   ├── 📄 page.js                  # Home page
+│   │   │
+│   │   ├── 📁 components/              # Reusable Components
+│   │   │   ├── Header.js               # Navigation header with dark mode
+│   │   │   ├── Footer.js               # Footer with newsletter
+│   │   │   ├── Hero.js                 # Hero section with parallax
+│   │   │   ├── Logo.js                 # SVG logo component
+│   │   │   ├── CategoryGrid.js         # Category display grid
+│   │   │   ├── ProductCarousel.js      # Product carousel
+│   │   │   ├── ServiceCard.js          # Service card component
+│   │   │   ├── Testimonial.js          # Testimonial slider
+│   │   │   ├── Accordion.js            # FAQ accordion
+│   │   │   ├── Modal.js                # Modal with focus trap
+│   │   │   ├── ContactForm.js          # Contact form
+│   │   │   └── SEO.js                  # SEO helper component
+│   │   │
+│   │   ├── 📁 about/                   # About Page
+│   │   │   └── page.js                 # About page content
+│   │   │
+│   │   ├── 📁 services/                # Services Page
+│   │   │   └── page.js                 # Services page content
+│   │   │
+│   │   ├── 📁 contact/                 # Contact Page
+│   │   │   └── page.js                 # Contact page content
+│   │   │
+│   │   ├── 📁 privacy/                 # Privacy Policy Page
+│   │   │   └── page.js                 # Privacy policy content
+│   │   │
+│   │   ├── 📁 terms/                   # Terms & Conditions Page
+│   │   │   └── page.js                 # Terms content
+│   │   │
+│   │   └── 📁 api/                     # API Routes
+│   │       └── 📁 contact/
+│   │           └── route.js            # Contact form API endpoint
+│   │
+│   ├── 📁 lib/                         # Utilities & Data
+│   │   ├── data.js                     # Sample data (products, categories, etc.)
+│   │   └── useReveal.js                # Scroll reveal animation hook
+│   │
+│   └── 📁 styles/                      # Styles
+│       ├── globals.css                 # Global styles and utilities
+│       └── styleguide.md               # Design system documentation
+│
+├── 📁 public/                          # Static Assets
+│   ├── favicon.ico                     # Website favicon (REPLACE THIS)
+│   ├── site.webmanifest                # PWA manifest
+│   ├── robots.txt                      # SEO robots file
+│   │
+│   ├── 📁 images/                      # Images Directory
+│   │   ├── .gitkeep                    # Placeholder file
+│   │   │
+│   │   │ ADD YOUR IMAGES HERE:
+│   │   ├── placeholder-books.jpg       # Category image (600x400)
+│   │   ├── placeholder-school.jpg      # Category image (600x400)
+│   │   ├── placeholder-office.jpg      # Category image (600x400)
+│   │   ├── placeholder-gifts.jpg       # Category image (600x400)
+│   │   ├── placeholder-art.jpg         # Category image (600x400)
+│   │   ├── placeholder-corporate.jpg   # Category image (600x400)
+│   │   ├── placeholder-product-1.jpg   # Product image (800x800)
+│   │   ├── placeholder-product-2.jpg   # Product image (800x800)
+│   │   ├── placeholder-product-3.jpg   # Product image (800x800)
+│   │   ├── placeholder-product-4.jpg   # Product image (800x800)
+│   │   ├── placeholder-product-5.jpg   # Product image (800x800)
+│   │   ├── placeholder-product-6.jpg   # Product image (800x800)
+│   │   ├── placeholder-team-1.jpg      # Team photo (400x400)
+│   │   ├── placeholder-team-2.jpg      # Team photo (400x400)
+│   │   └── placeholder-team-3.jpg      # Team photo (400x400)
+│   │
+│   └── 📁 og/                          # Open Graph Images
+│       ├── .gitkeep                    # Placeholder file
+│       ├── og-image.jpg                # Social preview (1200x630) - ADD THIS
+│       └── twitter-image.jpg           # Twitter card (1200x630) - ADD THIS
+│
+└── 📁 node_modules/                    # Dependencies (auto-generated, don't edit)
+
+================================================================================
+
+📊 PROJECT STATISTICS:
+
+Total Files Created:        40+
+Components:                 12
+Pages:                      6
+API Routes:                 1
+Documentation Files:        8
+Configuration Files:        7
+
+================================================================================
+
+🎯 KEY FILES TO EDIT:
+
+MOST IMPORTANT:
+  1. src/lib/data.js              → Update products, categories, testimonials
+  2. src/app/contact/page.js      → Update address, phone, email
+  3. src/app/components/Footer.js → Update footer contact info
+  4. .env.local                   → Add your API keys (create from .env.example)
+
+CONTENT:
+  5. src/app/components/Hero.js   → Update hero text and promos
+  6. src/app/about/page.js        → Customize about content
+  7. src/app/services/page.js     → Customize services
+  8. src/app/privacy/page.js      → Review privacy policy
+  9. src/app/terms/page.js        → Review terms & conditions
+
+STYLING (OPTIONAL):
+  10. tailwind.config.js          → Change colors
+  11. src/styles/globals.css      → Change fonts, animations
+  12. src/app/components/Logo.js  → Replace logo
+
+SEO:
+  13. src/app/layout.js           → Update metadata, domain
+  14. src/app/components/SEO.js   → Update business info, coordinates
+
+================================================================================
+
+🚫 FILES TO NEVER EDIT:
+
+- node_modules/                   (auto-generated)
+- .next/                          (build output, auto-generated)
+- package-lock.json               (auto-generated, only edit package.json)
+
+================================================================================
+
+📝 FILES TO CREATE:
+
+REQUIRED:
+  ✓ .env.local                    (copy from .env.example and fill in)
+
+OPTIONAL:
+  ✓ public/images/*.jpg           (your actual images)
+  ✓ public/og/*.jpg               (social media preview images)
+  ✓ public/favicon.ico            (your custom favicon)
+
+================================================================================
+
+🔍 FINDING EDITABLE CONTENT:
+
+Search for these comments in the code:
+  /* EDITABLE: ... */              → Content you should update
+  // EDITABLE: ...                 → Alternative comment style
+
+Use your code editor's search function (Ctrl+Shift+F or Cmd+Shift+F) to find
+all instances of "EDITABLE" across the project.
+
+================================================================================
+
+📂 FOLDER PURPOSES:
+
+src/app/                  → Pages and routing (Next.js App Router)
+src/app/components/       → Reusable UI components
+src/app/api/              → Backend API endpoints
+src/lib/                  → Utility functions and data
+src/styles/               → CSS and styling
+public/                   → Static files (images, favicon, etc.)
+public/images/            → Product and category images
+public/og/                → Social media preview images
+
+================================================================================
+
+🎨 COMPONENT HIERARCHY:
+
+Layout (layout.js)
+├── Header
+│   ├── Logo
+│   └── Navigation
+│
+├── Page Content (page.js)
+│   ├── Hero
+│   ├── CategoryGrid
+│   ├── ProductCarousel
+│   ├── Testimonial
+│   └── Other sections
+│
+└── Footer
+    └── Newsletter signup
+
+================================================================================
+
+🔄 BUILD OUTPUT (Auto-generated):
+
+.next/                    → Production build output (don't commit to Git)
+out/                      → Static export output (if using `next export`)
+
+These folders are created when you run:
+  npm run build           → Creates .next/ folder
+  npm run dev             → Creates .next/ folder (development mode)
+
+================================================================================
+
+📦 DEPENDENCIES (package.json):
+
+PRODUCTION:
+  - next                  → Next.js framework
+  - react                 → React library
+  - react-dom             → React DOM renderer
+
+DEVELOPMENT:
+  - tailwindcss           → Utility-first CSS framework
+  - postcss               → CSS processing
+  - autoprefixer          → CSS vendor prefixes
+  - eslint                → Code linting
+
+TO ADD MORE:
+  npm install package-name
+
+================================================================================
+
+🚀 WORKFLOW:
+
+1. Edit files in src/
+2. Add images to public/
+3. Test with: npm run dev
+4. Build with: npm run build
+5. Deploy to hosting platform
+
+================================================================================
+
+💡 TIPS:
+
+- Use VS Code or similar editor for best experience
+- Install ESLint extension for code quality
+- Install Tailwind CSS IntelliSense extension
+- Use browser DevTools for debugging
+- Check console for errors during development
+
+================================================================================
+
+📞 NEED HELP FINDING SOMETHING?
+
+Check these files:
+  - README.md           → General documentation
+  - SETUP.md            → Setup instructions
+  - CUSTOMIZATION.md    → How to customize
+  - CHECKLIST.md        → What to update
+
+================================================================================
+
+Last Updated: October 2, 2025
+Project: THE SCRIBOR — House of Paper
+Status: Production Ready ✅
+
+================================================================================

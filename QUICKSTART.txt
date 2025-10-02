@@ -1,0 +1,126 @@
+================================================================================
+  THE SCRIBOR — House of Paper
+  Quick Start Guide
+================================================================================
+
+🚀 GET STARTED IN 3 STEPS:
+
+1. INSTALL DEPENDENCIES
+   Open terminal in this folder and run:
+   
+   npm install
+
+2. START DEVELOPMENT SERVER
+   
+   npm run dev
+
+3. OPEN IN BROWSER
+   
+   http://localhost:3000
+
+================================================================================
+
+📝 WHAT TO DO NEXT:
+
+1. Browse the website at http://localhost:3000
+2. Read README.md for full documentation
+3. Read SETUP.md for detailed setup instructions
+4. Update content marked with /* EDITABLE: */ comments
+5. Add your images to public/images/
+6. Configure email service for contact form
+7. Deploy to Vercel (see DEPLOYMENT.md)
+
+================================================================================
+
+📁 KEY FILES TO EDIT:
+
+CONTENT:
+  src/lib/data.js                 - Products, categories, testimonials
+  src/app/components/Hero.js      - Hero section text and promos
+  src/app/contact/page.js         - Contact info and address
+  src/app/components/Footer.js    - Footer content
+
+CONFIGURATION:
+  .env.local                      - Environment variables (create from .env.example)
+  tailwind.config.js              - Colors and styling
+  src/app/layout.js               - SEO metadata
+
+IMAGES:
+  public/images/                  - Product and category images
+  public/og/                      - Social media preview images
+  public/favicon.ico              - Website icon
+
+================================================================================
+
+🎨 CUSTOMIZATION:
+
+- Colors: Edit tailwind.config.js and src/styles/globals.css
+- Fonts: Edit src/styles/globals.css (Google Fonts import)
+- Logo: Edit src/app/components/Logo.js
+- Layout: Edit page files in src/app/
+
+See CUSTOMIZATION.md for detailed instructions.
+
+================================================================================
+
+📚 DOCUMENTATION:
+
+README.md           - Main documentation
+SETUP.md            - Step-by-step setup guide
+DEPLOYMENT.md       - How to deploy to production
+CUSTOMIZATION.md    - How to customize the site
+PROJECT_SUMMARY.md  - Complete project overview
+styleguide.md       - Design system and style guide
+
+================================================================================
+
+🔧 USEFUL COMMANDS:
+
+npm run dev         - Start development server
+npm run build       - Build for production
+npm start           - Start production server
+npm run lint        - Check code quality
+
+================================================================================
+
+✅ PROJECT INCLUDES:
+
+✓ 6 Pages (Home, About, Services, Contact, Privacy, Terms)
+✓ 12 Reusable Components
+✓ Responsive Design (Mobile-First)
+✓ Dark Mode Toggle
+✓ Contact Form with Validation
+✓ SEO Optimized
+✓ Accessible (WCAG AA)
+✓ Production Ready
+
+================================================================================
+
+🌐 DEPLOYMENT:
+
+Recommended: Vercel (https://vercel.com)
+
+1. Push code to GitHub
+2. Import repository on Vercel
+3. Add environment variables
+4. Deploy!
+
+See DEPLOYMENT.md for other hosting options.
+
+================================================================================
+
+📞 NEED HELP?
+
+Check the documentation files in this folder:
+- README.md for general info
+- SETUP.md for setup help
+- CUSTOMIZATION.md for customization
+- DEPLOYMENT.md for deployment
+
+================================================================================
+
+Built with Next.js, React, and Tailwind CSS
+Ready for production deployment!
+
+🎉 Happy coding!
+================================================================================

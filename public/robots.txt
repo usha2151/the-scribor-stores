@@ -1,0 +1,9 @@
+# robots.txt for THE SCRIBOR — House of Paper
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://thescribor.com/sitemap.xml
+
+# EDITABLE: Replace with your actual domain
